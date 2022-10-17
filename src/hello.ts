@@ -1,5 +1,5 @@
 import WaybarJsonOutput from "./WaybarJsonOutput.ts";
 
-const hello = new WaybarJsonOutput("Hello Nico");
+const hello = new WaybarJsonOutput("Hello World");
 
 hello.repr();
