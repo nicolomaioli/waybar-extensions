@@ -1,0 +1,13 @@
+#custom-dnf,
+#custom-dnf.ok {
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+#custom-dnf.error {
+  color: red;
+}
+
+#custom-dnf.update {
+  color: green;
+}

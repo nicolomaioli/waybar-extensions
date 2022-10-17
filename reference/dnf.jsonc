@@ -1,0 +1,13 @@
+// Waybar component reference
+{
+  "custom/dnf": {
+    // Update path with executable
+    "exec": "$HOME/Code/waybar-extensions/bin/dnf",
+    "return-type": "json",
+    "interval": 3600,
+    "format": "{} {icon}",
+    "format-icons": "",
+    // Update action with appropriate terminal
+    "on-click": "alacritty -e sudo dnf update"
+  }
+}
