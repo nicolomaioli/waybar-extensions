@@ -7,7 +7,7 @@
       "args": [
         "-A",
         "--output",
-        "./bin/${fileBasenameNoExtension}",
+        "${workspaceFolder}/bin/${fileBasenameNoExtension}",
         "${file}"
       ],
       "problemMatcher": [
