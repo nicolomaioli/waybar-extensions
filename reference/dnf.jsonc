@@ -7,7 +7,8 @@
     "interval": 3600,
     "format": "{} {icon}",
     "format-icons": "",
-    // Update action with appropriate terminal
-    "on-click": "alacritty -e sudo dnf update"
+    // Update action with appropriate terminal, update component on SIGRTMIN+8
+    "on-click": "alacritty -e sudo dnf update; pkill -SIGRTMIN+8 waybar",
+    "signal": 8
   }
 }
