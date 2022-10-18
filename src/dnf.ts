@@ -13,7 +13,7 @@ const child = Deno.run(cmd);
 const { code } = await child.status();
 const decoder = new TextDecoder();
 
-const output = new WaybarJsonOutput("Updates");
+const output = new WaybarJsonOutput("sys");
 switch (code) {
   case 0:
     // System up to date, no output
