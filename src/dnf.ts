@@ -1,4 +1,4 @@
-import WaybarJsonOutput from "./WaybarJsonOutput.ts";
+import WaybarJsonOutput from "../lib/WaybarJsonOutput.ts";
 
 const cmd: Deno.RunOptions = {
   cmd: [

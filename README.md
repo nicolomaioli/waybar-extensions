@@ -9,11 +9,14 @@ in case anyone would like to reference it.
 
 ## Build
 
-The repo includes a Visual Studio Code default build task, it's a simple
-`deno compile`.
+Compile as:
+
+```sh
+deno compile -A --output ./bin/{file}
+```
 
 Note that using `deno run` in the `exec` portion of a Waybar Custom Module does
 not work (best guess is they don't spawn in a shell).
 
-The `./reference` folder includes a `json` fragment to copy over to Waybar
-config, and a `css` fragment for Waybar style.
+The `./ref` folder includes a `json` fragment to copy over to Waybar config, and
+a `css` fragment for Waybar style.
