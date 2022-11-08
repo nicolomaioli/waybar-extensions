@@ -4,6 +4,7 @@ const cmd: Deno.RunOptions = {
   cmd: [
     "dnf",
     "check-update",
+    "-q",
   ],
   stdout: "piped",
   stderr: "piped",
@@ -30,7 +31,15 @@ switch (code) {
   case 100: {
     // Updates available
     const stdout = await child.output();
-    output.tooltip = decoder.decode(stdout);
+
+    // Only list dependencies
+    output.tooltip = decoder
+      .decode(stdout)
+      .split("\n")
+      .map((line) => line.split("\.")[0])
+      .join("\n")
+      .trim();
+
     output.class = "update";
     break;
   }
